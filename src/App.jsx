@@ -20,7 +20,7 @@ function App() {
     setError("");
     setLoading(true);
     axios
-      .get("/api/users")
+      .get("https://backend-three-kohl.vercel.app/api/users")
       .then((response) => setData(response.data))
       .catch((error) => {
         console.log(error);
